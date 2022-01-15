@@ -4,12 +4,15 @@ using System.Text;
 
 namespace TrackerLibrary
 {
+    /// <summary>
+    /// Represents one matchup
+    /// </summary>
     class MatchupModel
     {
         /// <summary>
         /// List of Matchup Entries
         /// </summary>
-        public List<MatchupEntryModel> Entries { get; set; }
+        public List<MatchupEntryModel> Entries { get; set; } = new List<MatchupEntryModel>();
         /// <summary>
         /// Winner of the matchup
         /// </summary>

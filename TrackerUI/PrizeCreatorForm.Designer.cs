@@ -155,6 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(736, 509);
             this.Controls.Add(this.createPrizeButton);
             this.Controls.Add(this.orLabel);
@@ -168,7 +169,7 @@
             this.Controls.Add(this.placeNumberLabel);
             this.Controls.Add(this.createPrizeLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "PrizeCreatorForm";
             this.Text = "Prize Creator";
             this.Load += new System.EventHandler(this.PrizeCreatorForm_Load);

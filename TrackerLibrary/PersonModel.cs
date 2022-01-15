@@ -4,6 +4,9 @@ using System.Text;
 
 namespace TrackerLibrary
 {
+    /// <summary>
+    /// Represents one person
+    /// </summary>
     class PersonModel
     {
         /// <summary>
