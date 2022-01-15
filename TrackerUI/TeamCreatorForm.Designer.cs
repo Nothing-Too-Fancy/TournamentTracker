@@ -30,7 +30,7 @@
         {
             this.createTeamLabel = new System.Windows.Forms.Label();
             this.teamNameLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.teamNameTextbox = new System.Windows.Forms.TextBox();
             this.selectTeamMemberLabel = new System.Windows.Forms.Label();
             this.selectTeamMemberDropDown = new System.Windows.Forms.ComboBox();
             this.addMemberButton = new System.Windows.Forms.Button();
@@ -71,12 +71,12 @@
             this.teamNameLabel.TabIndex = 1;
             this.teamNameLabel.Text = "Team Name";
             // 
-            // textBox1
+            // teamNameTextbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(29, 100);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 23);
-            this.textBox1.TabIndex = 2;
+            this.teamNameTextbox.Location = new System.Drawing.Point(29, 100);
+            this.teamNameTextbox.Name = "teamNameTextbox";
+            this.teamNameTextbox.Size = new System.Drawing.Size(270, 23);
+            this.teamNameTextbox.TabIndex = 2;
             // 
             // selectTeamMemberLabel
             // 
@@ -262,7 +262,7 @@
             this.Controls.Add(this.addMemberButton);
             this.Controls.Add(this.selectTeamMemberDropDown);
             this.Controls.Add(this.selectTeamMemberLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.teamNameTextbox);
             this.Controls.Add(this.teamNameLabel);
             this.Controls.Add(this.createTeamLabel);
             this.Name = "TeamCreatorForm";
@@ -276,7 +276,7 @@
 
         private System.Windows.Forms.Label createTeamLabel;
         private System.Windows.Forms.Label teamNameLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox teamNameTextbox;
         private System.Windows.Forms.Label selectTeamMemberLabel;
         private System.Windows.Forms.ComboBox selectTeamMemberDropDown;
         private System.Windows.Forms.Button addMemberButton;

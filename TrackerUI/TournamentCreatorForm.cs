@@ -46,5 +46,10 @@ namespace TrackerUI
         {
 
         }
+
+        private void TournamentName_textbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

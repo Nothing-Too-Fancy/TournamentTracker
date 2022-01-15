@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.CreateTournament_label = new System.Windows.Forms.Label();
-            this.TournamentName_label = new System.Windows.Forms.Label();
-            this.TournamentName_textbox = new System.Windows.Forms.TextBox();
-            this.EntryFee_label = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.SelectTeam_label = new System.Windows.Forms.Label();
-            this.CreateNewTeam_link = new System.Windows.Forms.LinkLabel();
-            this.Team_dropdown = new System.Windows.Forms.ComboBox();
-            this.AddTeam_button = new System.Windows.Forms.Button();
-            this.CreateTournament_button = new System.Windows.Forms.Button();
+            this.createTournamentLabel = new System.Windows.Forms.Label();
+            this.tournamentNameLabel = new System.Windows.Forms.Label();
+            this.tournamentNameTextBox = new System.Windows.Forms.TextBox();
+            this.entryFeeLabel = new System.Windows.Forms.Label();
+            this.entryFeeTextBox = new System.Windows.Forms.TextBox();
+            this.selectTeamLabel = new System.Windows.Forms.Label();
+            this.createNewTeamLink = new System.Windows.Forms.LinkLabel();
+            this.selectTeamDropdown = new System.Windows.Forms.ComboBox();
+            this.addTeamButton = new System.Windows.Forms.Button();
+            this.createTournmentButton = new System.Windows.Forms.Button();
             this.teamsPlayersLabel = new System.Windows.Forms.Label();
             this.teamsPlayersListBox = new System.Windows.Forms.ListBox();
             this.prizesLabel = new System.Windows.Forms.Label();
@@ -49,99 +49,100 @@
             this.createPrizeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // CreateTournament_label
+            // createTournamentLabel
             // 
-            this.CreateTournament_label.AutoSize = true;
-            this.CreateTournament_label.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CreateTournament_label.Location = new System.Drawing.Point(336, 9);
-            this.CreateTournament_label.Name = "CreateTournament_label";
-            this.CreateTournament_label.Size = new System.Drawing.Size(242, 37);
-            this.CreateTournament_label.TabIndex = 1;
-            this.CreateTournament_label.Text = "Create Tournament";
-            this.CreateTournament_label.Click += new System.EventHandler(this.label1_Click);
+            this.createTournamentLabel.AutoSize = true;
+            this.createTournamentLabel.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.createTournamentLabel.Location = new System.Drawing.Point(336, 9);
+            this.createTournamentLabel.Name = "createTournamentLabel";
+            this.createTournamentLabel.Size = new System.Drawing.Size(242, 37);
+            this.createTournamentLabel.TabIndex = 1;
+            this.createTournamentLabel.Text = "Create Tournament";
+            this.createTournamentLabel.Click += new System.EventHandler(this.label1_Click);
             // 
-            // TournamentName_label
+            // tournamentNameLabel
             // 
-            this.TournamentName_label.AutoSize = true;
-            this.TournamentName_label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TournamentName_label.Location = new System.Drawing.Point(364, 55);
-            this.TournamentName_label.Name = "TournamentName_label";
-            this.TournamentName_label.Size = new System.Drawing.Size(178, 25);
-            this.TournamentName_label.TabIndex = 2;
-            this.TournamentName_label.Text = "Tournament Name";
+            this.tournamentNameLabel.AutoSize = true;
+            this.tournamentNameLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tournamentNameLabel.Location = new System.Drawing.Point(364, 55);
+            this.tournamentNameLabel.Name = "tournamentNameLabel";
+            this.tournamentNameLabel.Size = new System.Drawing.Size(178, 25);
+            this.tournamentNameLabel.TabIndex = 2;
+            this.tournamentNameLabel.Text = "Tournament Name";
             // 
-            // TournamentName_textbox
+            // tournamentNameTextBox
             // 
-            this.TournamentName_textbox.Location = new System.Drawing.Point(300, 83);
-            this.TournamentName_textbox.Name = "TournamentName_textbox";
-            this.TournamentName_textbox.Size = new System.Drawing.Size(295, 25);
-            this.TournamentName_textbox.TabIndex = 3;
+            this.tournamentNameTextBox.Location = new System.Drawing.Point(300, 83);
+            this.tournamentNameTextBox.Name = "tournamentNameTextBox";
+            this.tournamentNameTextBox.Size = new System.Drawing.Size(295, 25);
+            this.tournamentNameTextBox.TabIndex = 3;
+            this.tournamentNameTextBox.TextChanged += new System.EventHandler(this.TournamentName_textbox_TextChanged);
             // 
-            // EntryFee_label
+            // entryFeeLabel
             // 
-            this.EntryFee_label.AutoSize = true;
-            this.EntryFee_label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.EntryFee_label.Location = new System.Drawing.Point(401, 111);
-            this.EntryFee_label.Name = "EntryFee_label";
-            this.EntryFee_label.Size = new System.Drawing.Size(95, 25);
-            this.EntryFee_label.TabIndex = 4;
-            this.EntryFee_label.Text = "Entry Fee";
+            this.entryFeeLabel.AutoSize = true;
+            this.entryFeeLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.entryFeeLabel.Location = new System.Drawing.Point(401, 111);
+            this.entryFeeLabel.Name = "entryFeeLabel";
+            this.entryFeeLabel.Size = new System.Drawing.Size(95, 25);
+            this.entryFeeLabel.TabIndex = 4;
+            this.entryFeeLabel.Text = "Entry Fee";
             // 
-            // textBox1
+            // entryFeeTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(355, 139);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 25);
-            this.textBox1.TabIndex = 5;
+            this.entryFeeTextBox.Location = new System.Drawing.Point(355, 139);
+            this.entryFeeTextBox.Name = "entryFeeTextBox";
+            this.entryFeeTextBox.Size = new System.Drawing.Size(194, 25);
+            this.entryFeeTextBox.TabIndex = 5;
             // 
-            // SelectTeam_label
+            // selectTeamLabel
             // 
-            this.SelectTeam_label.AutoSize = true;
-            this.SelectTeam_label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SelectTeam_label.Location = new System.Drawing.Point(59, 175);
-            this.SelectTeam_label.Name = "SelectTeam_label";
-            this.SelectTeam_label.Size = new System.Drawing.Size(115, 25);
-            this.SelectTeam_label.TabIndex = 6;
-            this.SelectTeam_label.Text = "Select Team";
+            this.selectTeamLabel.AutoSize = true;
+            this.selectTeamLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.selectTeamLabel.Location = new System.Drawing.Point(59, 175);
+            this.selectTeamLabel.Name = "selectTeamLabel";
+            this.selectTeamLabel.Size = new System.Drawing.Size(115, 25);
+            this.selectTeamLabel.TabIndex = 6;
+            this.selectTeamLabel.Text = "Select Team";
             // 
-            // CreateNewTeam_link
+            // createNewTeamLink
             // 
-            this.CreateNewTeam_link.AutoSize = true;
-            this.CreateNewTeam_link.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CreateNewTeam_link.Location = new System.Drawing.Point(225, 183);
-            this.CreateNewTeam_link.Name = "CreateNewTeam_link";
-            this.CreateNewTeam_link.Size = new System.Drawing.Size(76, 17);
-            this.CreateNewTeam_link.TabIndex = 7;
-            this.CreateNewTeam_link.TabStop = true;
-            this.CreateNewTeam_link.Text = "Create New";
+            this.createNewTeamLink.AutoSize = true;
+            this.createNewTeamLink.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.createNewTeamLink.Location = new System.Drawing.Point(225, 183);
+            this.createNewTeamLink.Name = "createNewTeamLink";
+            this.createNewTeamLink.Size = new System.Drawing.Size(76, 17);
+            this.createNewTeamLink.TabIndex = 7;
+            this.createNewTeamLink.TabStop = true;
+            this.createNewTeamLink.Text = "Create New";
             // 
-            // Team_dropdown
+            // selectTeamDropdown
             // 
-            this.Team_dropdown.FormattingEnabled = true;
-            this.Team_dropdown.Location = new System.Drawing.Point(59, 203);
-            this.Team_dropdown.Name = "Team_dropdown";
-            this.Team_dropdown.Size = new System.Drawing.Size(295, 25);
-            this.Team_dropdown.TabIndex = 8;
+            this.selectTeamDropdown.FormattingEnabled = true;
+            this.selectTeamDropdown.Location = new System.Drawing.Point(59, 203);
+            this.selectTeamDropdown.Name = "selectTeamDropdown";
+            this.selectTeamDropdown.Size = new System.Drawing.Size(295, 25);
+            this.selectTeamDropdown.TabIndex = 8;
             // 
-            // AddTeam_button
+            // addTeamButton
             // 
-            this.AddTeam_button.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.AddTeam_button.Location = new System.Drawing.Point(134, 234);
-            this.AddTeam_button.Name = "AddTeam_button";
-            this.AddTeam_button.Size = new System.Drawing.Size(132, 31);
-            this.AddTeam_button.TabIndex = 9;
-            this.AddTeam_button.Text = "Add Team";
-            this.AddTeam_button.UseVisualStyleBackColor = true;
+            this.addTeamButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.addTeamButton.Location = new System.Drawing.Point(134, 234);
+            this.addTeamButton.Name = "addTeamButton";
+            this.addTeamButton.Size = new System.Drawing.Size(132, 31);
+            this.addTeamButton.TabIndex = 9;
+            this.addTeamButton.Text = "Add Team";
+            this.addTeamButton.UseVisualStyleBackColor = true;
             // 
-            // CreateTournament_button
+            // createTournmentButton
             // 
-            this.CreateTournament_button.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CreateTournament_button.Location = new System.Drawing.Point(313, 578);
-            this.CreateTournament_button.Name = "CreateTournament_button";
-            this.CreateTournament_button.Size = new System.Drawing.Size(250, 45);
-            this.CreateTournament_button.TabIndex = 9;
-            this.CreateTournament_button.Text = "Create Tournament";
-            this.CreateTournament_button.UseVisualStyleBackColor = true;
+            this.createTournmentButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.createTournmentButton.Location = new System.Drawing.Point(313, 578);
+            this.createTournmentButton.Name = "createTournmentButton";
+            this.createTournmentButton.Size = new System.Drawing.Size(250, 45);
+            this.createTournmentButton.TabIndex = 9;
+            this.createTournmentButton.Text = "Create Tournament";
+            this.createTournmentButton.UseVisualStyleBackColor = true;
             // 
             // teamsPlayersLabel
             // 
@@ -233,7 +234,7 @@
             this.createPrizeButton.Text = "Create Prize";
             this.createPrizeButton.UseVisualStyleBackColor = true;
             // 
-            // TournamentViewerForm
+            // TournamentCreatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -248,19 +249,19 @@
             this.Controls.Add(this.prizesLabel);
             this.Controls.Add(this.teamsPlayersListBox);
             this.Controls.Add(this.teamsPlayersLabel);
-            this.Controls.Add(this.CreateTournament_button);
-            this.Controls.Add(this.AddTeam_button);
-            this.Controls.Add(this.Team_dropdown);
-            this.Controls.Add(this.CreateNewTeam_link);
-            this.Controls.Add(this.SelectTeam_label);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.EntryFee_label);
-            this.Controls.Add(this.TournamentName_textbox);
-            this.Controls.Add(this.TournamentName_label);
-            this.Controls.Add(this.CreateTournament_label);
+            this.Controls.Add(this.createTournmentButton);
+            this.Controls.Add(this.addTeamButton);
+            this.Controls.Add(this.selectTeamDropdown);
+            this.Controls.Add(this.createNewTeamLink);
+            this.Controls.Add(this.selectTeamLabel);
+            this.Controls.Add(this.entryFeeTextBox);
+            this.Controls.Add(this.entryFeeLabel);
+            this.Controls.Add(this.tournamentNameTextBox);
+            this.Controls.Add(this.tournamentNameLabel);
+            this.Controls.Add(this.createTournamentLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Name = "TournamentViewerForm";
+            this.Name = "TournamentCreatorForm";
             this.Text = "Tournament Creator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -270,16 +271,16 @@
 
         #endregion
         private System.Windows.Forms.Label TeamLabel;
-        private System.Windows.Forms.Label CreateTournament_label;
-        private System.Windows.Forms.Label TournamentName_label;
-        private System.Windows.Forms.TextBox TournamentName_textbox;
-        private System.Windows.Forms.Label EntryFee_label;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label SelectTeam_label;
-        private System.Windows.Forms.LinkLabel CreateNewTeam_link;
-        private System.Windows.Forms.ComboBox Team_dropdown;
-        private System.Windows.Forms.Button AddTeam_button;
-        private System.Windows.Forms.Button CreateTournament_button;
+        private System.Windows.Forms.Label createTournamentLabel;
+        private System.Windows.Forms.Label tournamentNameLabel;
+        private System.Windows.Forms.TextBox tournamentNameTextBox;
+        private System.Windows.Forms.Label entryFeeLabel;
+        private System.Windows.Forms.TextBox entryFeeTextBox;
+        private System.Windows.Forms.Label selectTeamLabel;
+        private System.Windows.Forms.LinkLabel createNewTeamLink;
+        private System.Windows.Forms.ComboBox selectTeamDropdown;
+        private System.Windows.Forms.Button addTeamButton;
+        private System.Windows.Forms.Button createTournmentButton;
         private System.Windows.Forms.Label teamsPlayersLabel;
         private System.Windows.Forms.ListBox teamsPlayersListBox;
         private System.Windows.Forms.Label prizesLabel;

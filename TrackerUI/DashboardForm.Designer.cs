@@ -28,23 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.dashboardLabel = new System.Windows.Forms.Label();
             this.loadTournamentLabel = new System.Windows.Forms.Label();
             this.loadTournamentDropdown = new System.Windows.Forms.ComboBox();
             this.loadTournamentButton = new System.Windows.Forms.Button();
             this.createTournamentButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // dashboardLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(254, 40);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(265, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Tournament Dashboard";
+            this.dashboardLabel.AutoSize = true;
+            this.dashboardLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dashboardLabel.Location = new System.Drawing.Point(254, 40);
+            this.dashboardLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.dashboardLabel.Name = "dashboardLabel";
+            this.dashboardLabel.Size = new System.Drawing.Size(265, 32);
+            this.dashboardLabel.TabIndex = 0;
+            this.dashboardLabel.Text = "Tournament Dashboard";
             // 
             // loadTournamentLabel
             // 
@@ -93,7 +93,7 @@
             this.Controls.Add(this.loadTournamentButton);
             this.Controls.Add(this.loadTournamentDropdown);
             this.Controls.Add(this.loadTournamentLabel);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dashboardLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "DashboardForm";
@@ -106,7 +106,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label dashboardLabel;
         private System.Windows.Forms.Label loadTournamentLabel;
         private System.Windows.Forms.ComboBox loadTournamentDropdown;
         private System.Windows.Forms.Button loadTournamentButton;
