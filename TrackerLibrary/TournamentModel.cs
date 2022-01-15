@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TrackerLibrary
 {
-    class Tournament
+    class TournamentModel
     {
         /// <summary>
         /// Name of the Tournament
@@ -17,14 +17,14 @@ namespace TrackerLibrary
         /// <summary>
         /// List of teams entered in this tournament
         /// </summary>
-        public List<Team> EnteredTeams { get; set; }
+        public List<TeamModel> EnteredTeams { get; set; }
         /// <summary>
         /// List of prizes for this tournament
         /// </summary>
-        public List<Prize> Prizes { get; set; }
+        public List<PrizeModel> Prizes { get; set; }
         /// <summary>
         /// List of matchups of each round
         /// </summary>
-        public List<List<Matchup>> Rounds { get; set; }
+        public List<List<MatchupModel>> Rounds { get; set; }
     }
 }

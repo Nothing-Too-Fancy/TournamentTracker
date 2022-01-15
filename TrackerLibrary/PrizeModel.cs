@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TrackerLibrary
 {
-    class Prize
+    class PrizeModel
     {
         /// <summary>
         /// The place number this prize is awarded to

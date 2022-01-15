@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TrackerLibrary
 {
-    class Person
+    class PersonModel
     {
         /// <summary>
         /// First Name of the player

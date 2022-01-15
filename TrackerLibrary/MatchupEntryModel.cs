@@ -4,12 +4,12 @@ using System.Text;
 
 namespace TrackerLibrary
 {
-    class MatchupEntry
+    class MatchupEntryModel
     {
         /// <summary>
         /// Team competing in the Matchup
         /// </summary>
-        public Team TeamCompeting { get; set; }
+        public TeamModel TeamCompeting { get; set; }
         /// <summary>
         /// Team Score
         /// </summary>
@@ -17,6 +17,6 @@ namespace TrackerLibrary
         /// <summary>
         /// Winning matchup from previous round
         /// </summary>
-        public Matchup ParentMatchup { get; set; }
+        public MatchupModel ParentMatchup { get; set; }
     }
 }
