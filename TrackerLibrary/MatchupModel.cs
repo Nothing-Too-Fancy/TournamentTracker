@@ -7,7 +7,7 @@ namespace TrackerLibrary
     /// <summary>
     /// Represents one matchup
     /// </summary>
-    class MatchupModel
+    public class MatchupModel
     {
         /// <summary>
         /// List of Matchup Entries

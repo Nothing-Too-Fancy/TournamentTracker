@@ -7,7 +7,7 @@ namespace TrackerLibrary
     /// <summary>
     /// Represents one tournament
     /// </summary>
-    class TournamentModel
+    public class TournamentModel
     {
         /// <summary>
         /// Name of the Tournament

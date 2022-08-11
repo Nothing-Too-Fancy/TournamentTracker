@@ -7,7 +7,7 @@ namespace TrackerLibrary
     /// <summary>
     /// Represents one person
     /// </summary>
-    class PersonModel
+    public class PersonModel
     {
         /// <summary>
         /// First Name of the player

@@ -7,7 +7,7 @@ namespace TrackerLibrary
     /// <summary>
     /// Represents one teams
     /// </summary>
-    class TeamModel
+    public class TeamModel
     {
         /// <summary>
         /// List of players on the team

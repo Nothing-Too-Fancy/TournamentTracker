@@ -7,7 +7,7 @@ namespace TrackerLibrary
     /// <summary>
     /// Represents one prize
     /// </summary>
-    class PrizeModel
+    public class PrizeModel
     {
         /// <summary>
         /// The place number this prize is awarded to
