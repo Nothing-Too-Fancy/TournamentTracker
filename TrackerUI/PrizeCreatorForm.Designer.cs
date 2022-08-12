@@ -80,7 +80,6 @@
             this.placeNameLabel.Size = new System.Drawing.Size(112, 25);
             this.placeNameLabel.TabIndex = 1;
             this.placeNameLabel.Text = "Place Name";
-            this.placeNameLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // placeNameTextBox
             // 
@@ -100,7 +99,6 @@
             this.prizeAmountLabel.Size = new System.Drawing.Size(126, 25);
             this.prizeAmountLabel.TabIndex = 1;
             this.prizeAmountLabel.Text = "Prize Amount";
-            this.prizeAmountLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // prizeAmountTextBox
             // 
@@ -120,7 +118,6 @@
             this.prizePercentageLabel.Size = new System.Drawing.Size(153, 25);
             this.prizePercentageLabel.TabIndex = 1;
             this.prizePercentageLabel.Text = "Prize Percentage";
-            this.prizePercentageLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // prizePercentageTextBox
             // 

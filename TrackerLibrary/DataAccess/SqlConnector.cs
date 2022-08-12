@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using TrackerLibrary.Models;
 
-namespace TrackerLibrary
+namespace TrackerLibrary.DataAccess
 {
-    public class TextConnector : IDataConnection
+    public class SqlConnector : IDataConnection
     {
-        /// TODO - Make the CreatePrize method actually save to the text file
+        /// TODO - Make the CreatePrize method actually save to the database
         /// <summary>
-        /// Saves a new prize to a text file
+        /// Saves a new prize to the database
         /// </summary>
         /// <param name="model"></param>
         /// <returns>The prize information, including the unique identifier</returns>
