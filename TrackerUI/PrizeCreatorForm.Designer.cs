@@ -30,7 +30,7 @@
         {
             this.createPrizeLabel = new System.Windows.Forms.Label();
             this.placeNumberLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.placeNumberTextBox = new System.Windows.Forms.TextBox();
             this.placeNameLabel = new System.Windows.Forms.Label();
             this.placeNameTextBox = new System.Windows.Forms.TextBox();
             this.prizeAmountLabel = new System.Windows.Forms.Label();
@@ -61,16 +61,15 @@
             this.placeNumberLabel.Size = new System.Drawing.Size(131, 25);
             this.placeNumberLabel.TabIndex = 1;
             this.placeNumberLabel.Text = "Place Number";
-            this.placeNumberLabel.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // placeNumberTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(339, 65);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(217, 29);
-            this.textBox1.TabIndex = 2;
+            this.placeNumberTextBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.placeNumberTextBox.Location = new System.Drawing.Point(339, 65);
+            this.placeNumberTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.placeNumberTextBox.Name = "placeNumberTextBox";
+            this.placeNumberTextBox.Size = new System.Drawing.Size(217, 29);
+            this.placeNumberTextBox.TabIndex = 2;
             // 
             // placeNameLabel
             // 
@@ -150,6 +149,7 @@
             this.createPrizeButton.TabIndex = 4;
             this.createPrizeButton.Text = "Create Prize";
             this.createPrizeButton.UseVisualStyleBackColor = true;
+            this.createPrizeButton.Click += new System.EventHandler(this.createPrizeButton_Click);
             // 
             // PrizeCreatorForm
             // 
@@ -165,7 +165,7 @@
             this.Controls.Add(this.prizeAmountLabel);
             this.Controls.Add(this.placeNameTextBox);
             this.Controls.Add(this.placeNameLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.placeNumberTextBox);
             this.Controls.Add(this.placeNumberLabel);
             this.Controls.Add(this.createPrizeLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -182,7 +182,7 @@
 
         private System.Windows.Forms.Label createPrizeLabel;
         private System.Windows.Forms.Label placeNumberLabel;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox placeNumberTextBox;
         private System.Windows.Forms.Label placeNameLabel;
         private System.Windows.Forms.TextBox placeNameTextBox;
         private System.Windows.Forms.Label prizeAmountLabel;
